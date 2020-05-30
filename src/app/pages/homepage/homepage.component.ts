@@ -3,6 +3,7 @@ import { DataService } from 'src/app/services/data.service';
 import { GoogleAnalyticsService } from 'ngx-google-analytics';
 @Component({
   selector: "app-homepage",
+  styleUrls: ["homepage.component.scss"],
   templateUrl: "homepage.component.html"
 })
 export class HomepageComponent implements OnInit, OnDestroy {

@@ -27,7 +27,7 @@ import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
     PagesModule,
     PipesModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    NgxGoogleAnalyticsModule.forRoot('UA-167267038-1')
+    //NgxGoogleAnalyticsModule.forRoot('111111')
   ],
   providers: [
     DataService
