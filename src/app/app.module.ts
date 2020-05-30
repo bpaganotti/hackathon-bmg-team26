@@ -1,37 +1,37 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { RouterModule } from '@angular/router';
-import { AppRoutingModule } from './app.routing';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { RouterModule } from "@angular/router";
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { HttpClientModule } from "@angular/common/http";
 
-import { AppComponent } from './app.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
-import { FooterComponent } from './shared/footer/footer.component';
-
-import { ComponentsModule } from './components/components.module';
-import { HomeComponent } from './pages/home/home.component';
+import { PagesModule } from "./pages/pages.module";
+import { DataService } from './services/data.service';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-
-
+import { CommonModule } from '@angular/common';
+import { PipesModule } from './pipes/pipes.module';
+import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    FooterComponent,
-    HomeComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule,
-    NgbModule,
+    CommonModule,
+    BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     RouterModule,
-    ComponentsModule,
     AppRoutingModule,
+    PagesModule,
+    PipesModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    NgxGoogleAnalyticsModule.forRoot('UA-167267038-1')
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

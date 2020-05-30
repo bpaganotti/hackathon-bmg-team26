@@ -29,4 +29,3 @@ npm-debug.log*
 /platforms
 /plugins
 /www
-node_modules/.staging/yargs-957478db/lib/command.js

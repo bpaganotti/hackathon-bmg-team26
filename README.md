@@ -1,1 +1,0 @@
-# hackathon-bmg-team26

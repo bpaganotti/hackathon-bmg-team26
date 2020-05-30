@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@keyframes pulse {
+	0% {
+		transform: scale(0.90);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.90);
+	}
+}
+
+.pulse{
+    transform: scale(1);
+	animation: pulse 2s infinite;
+}

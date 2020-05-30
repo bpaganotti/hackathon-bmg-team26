@@ -1,8 +1,8 @@
 {
   "name": "BMG-26",
   "short_name": "BMG-26",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#FFF",
+  "background_color": "#FFF",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
