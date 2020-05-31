@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SaudefinanceiraComponent implements OnInit {
 
+  fase1Collapse:boolean = true;
+  fase2Collapse:boolean = true;
+  fase3Collapse:boolean = true;
   constructor() { }
 
   ngOnInit(): void {

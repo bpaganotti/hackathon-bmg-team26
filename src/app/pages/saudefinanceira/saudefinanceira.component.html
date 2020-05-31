@@ -1,1 +1,111 @@
-<p>saudefinanceira works!</p>
+<nav
+  class="navbar fixed-top navbar-transparent"
+  id="navbar-top"
+>
+  <div class="container">
+    <div class="navbar-translate">
+      <a
+        class="navbar-brand"
+        [routerLink]="['/home']"
+        placement="bottom"
+        tooltip="BMG 26"
+      >
+        <span> BMG• </span> 26
+      </a>
+    
+    </div>
+   
+  </div>
+</nav>
+<div class="wrapper">
+  <div class="content">
+      <div class="card-header">
+            
+    Ei, Bruno.
+    
+    Nós do BMG sempre trabalhamos para oferecer o melhor a você.
+    Acreditamos que a educação financeira é um instrumento que pode mudar a vida das pessoas, e queremos compartilhar com você algumas dicas por meio deste programa.
+    
+      </div> 
+      <hr/>
+
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left" type="button" (click)="fase1Collapse = !fase1Collapse " >
+            Preparais o colchão!
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse {{fase1Collapse?'':'show'}}" >
+        <div class="card-body">
+          
+Quem gasta o salário todo no mesmo mês vive o tempo todo no presente. Imagine-se surpreendido por um gasto excepcional este mês como uma avaria no carro ou a perda do emprego. Você precisaria recorrer a cheque especial ou mesmo a um empréstimo?
+
+Caso a resposta seja sim, saiba que pode contar conosco. Mas concorda que seria fantástico ter essa tranquilidade de não precisar usa-los!?
+
+O termo colchão de segurança está relacionado justamente à essa sensação de conforto, estar preparado para as adversidades pelo menos por um período.
+
+Inicialmente podemos olhar nossas despesas mensais e projetar uma reserva que seja suficiente para cobrir essas despesas por 3 meses.
+
+Calma, calma! Se você chegou até aqui não fique preocupado em fazer tudo de uma vez. É preciso nesse momento apenas entender o motivo pelo qual precisamos construir essa reserva que aqui chamamos colchão de segurança.
+
+Comece com pequenas ações, como economizar um cafezinho, cozinhar em casa um dia ao invés de pedir delivery e destine essa economia ao seu colchão. Poupar é questão de hábito.
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left collapsed" type="button" (click)="fase2Collapse = !fase2Collapse ">
+            Conhece tuas despesas
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse {{fase2Collapse?'':'show'}}" >
+        <div class="card-body">
+            É muito importante conhecer por onde nosso dinheiro vai embora.
+
+            Sejam taxas de bancos, anuidades de cartões, tv a cabo que por vezes não assistimos, somente depois de juntar os valores gastos anualmente podemos perceber que perdemos a oportunidade de realizar uma viagem, reformar a cozinha ou estar mais perto da independência financeira.
+            
+            Revisitar as despesas mensais com frequência ajuda a manter o foco no orçamento e garantirá que sobre a porcentagem que será poupada e futuramente investida.
+            
+            Ah, nós podemos te ajudar no controle das despesas.
+            Sabia que você pode transferir sua conta salário opara o BMG?
+            Se concentrar suas receitas e realizar seus pagamentos através da sua conta ou cartão de credito BMG poderá visualizar seu orçamento mensal aqui mesmo, estipular suas metas e acompanhar tudo em tempo real.
+            
+            Gostei de saber     Não me interesso
+           </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left collapsed" type="button" (click)="fase3Collapse = !fase3Collapse ">
+            Rumo à independência
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse {{fase3Collapse?'':'show'}}" >
+        <div class="card-body">
+          
+Agora que já temos o controle de nossas despesas e conseguimos montar nosso colchão de segurança é hora de começar a colocar o dinheiro para trabalhar sozinho.
+A primeira opção que vamos conhecer é chamada de renda fixa …</div>
+      </div>
+    </div>
+  
+  </div>
+ 
+  
+</div>
+
+
+
+
+
+
+
+
+

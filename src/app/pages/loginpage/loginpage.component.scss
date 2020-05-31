@@ -5,13 +5,16 @@
     flex-wrap: nowrap;
     align-items: center;
     margin-top: 150px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     
 }
 .content{
-    max-width: 450px;
+    min-width: 350px;
     justify-content: center;
     justify-items: center;
     justify-self: center;
+
+    padding-left: 15px;
+    padding-right: 15px;
 }
