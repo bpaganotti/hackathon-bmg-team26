@@ -8,7 +8,7 @@ import { LoginpageComponent } from './pages/loginpage/loginpage.component';
 import { SaudefinanceiraComponent } from './pages/saudefinanceira/saudefinanceira.component';
 
 const routes: Routes =[
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'home',             component: HomepageComponent },
   { path: 'login',             component: LoginpageComponent },
   { path: 'saude-financeira',  component: SaudefinanceiraComponent },
