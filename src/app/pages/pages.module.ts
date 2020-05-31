@@ -20,6 +20,8 @@ import { PopoverModule } from "ngx-bootstrap/popover";
 import { HomepageComponent } from './homepage/homepage.component';
 import { PipesModule } from '../pipes/pipes.module';
 import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
+import { LoginpageComponent } from './loginpage/loginpage.component';
+import { SaudefinanceiraComponent } from './saudefinanceira/saudefinanceira.component';
 
 @NgModule({
   imports: [
@@ -42,7 +44,9 @@ import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
     //ModalModule.forRoot()
   ],
   declarations: [
-    HomepageComponent
+    HomepageComponent,
+    LoginpageComponent,
+    SaudefinanceiraComponent
   ],
   exports: [
     HomepageComponent

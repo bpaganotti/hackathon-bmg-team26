@@ -13,6 +13,7 @@ import { environment } from '../environments/environment';
 import { CommonModule } from '@angular/common';
 import { PipesModule } from './pipes/pipes.module';
 import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
+import { GraphQLModule } from './graphql.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -27,6 +28,7 @@ import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
     PagesModule,
     PipesModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    GraphQLModule,
     //NgxGoogleAnalyticsModule.forRoot('111111')
   ],
   providers: [
