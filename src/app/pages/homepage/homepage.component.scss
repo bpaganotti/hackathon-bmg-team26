@@ -1,0 +1,18 @@
+.wrapper{
+    display:flex;
+    flex-direction: column-reverse;
+    flex-flow: column-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 150px;
+}
+.content{
+    min-width: 350px;
+    max-width: 650px;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
