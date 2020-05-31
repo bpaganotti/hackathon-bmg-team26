@@ -6,12 +6,13 @@ import { Routes, RouterModule } from "@angular/router";
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { LoginpageComponent } from './pages/loginpage/loginpage.component';
 import { SaudefinanceiraComponent } from './pages/saudefinanceira/saudefinanceira.component';
+import { AuthGuardService as AuthGuard  } from './services/auth-guard.service';
 
 const routes: Routes =[
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'home',             component: HomepageComponent },
-  { path: 'login',             component: LoginpageComponent },
-  { path: 'saude-financeira',  component: SaudefinanceiraComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'login', component: LoginpageComponent },
+  { path: 'home', component: HomepageComponent , canActivate: [AuthGuard] },
+  { path: 'saude-financeira',  component: SaudefinanceiraComponent, canActivate: [AuthGuard] },
 ];
 
 @NgModule({
